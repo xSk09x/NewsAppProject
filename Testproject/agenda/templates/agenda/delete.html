@@ -1,0 +1,15 @@
+{% extends 'main_app/parent.html' %}
+
+{% block title %}Form page{% endblock %}
+
+{% block main %}
+<div class="features">
+    <h1 class="h1Create">Form for creating new narrative</h1>
+    <form method="post">
+        {% csrf_token %}
+        <button class='btn btn-danger' type="submit">Delete</button>
+
+    </form>
+    
+</div>
+{% endblock %}
