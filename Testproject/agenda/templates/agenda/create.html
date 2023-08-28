@@ -3,8 +3,8 @@
 {% block title %}Form page{% endblock %}
 
 {% block main %}
-<div class="features">
-    <h1 class="h1Create">Form for creating new narrative</h1>
+<section>
+    <h1 class="form-title">Form for creating new narrative</h1>
     <form method="post">
         {% csrf_token %}
         
@@ -15,9 +15,9 @@
         
         <span>{{ error }}</span>
 
-        <button class='btn btn-success' type="submit">Add narrative</button>
+        <button class="primary-btn" type="submit">Add narrative</button>
 
     </form>
     
-</div>
+</section>
 {% endblock %}

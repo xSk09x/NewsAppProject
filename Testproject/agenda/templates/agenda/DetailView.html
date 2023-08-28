@@ -1,14 +1,15 @@
-{% extends 'main_app/parent.html' %}
-
-{% block title %}{{narrative.name}}{% endblock %}
-
+{% extends 'main_app/parent.html' %} 
+{% block title %}
+    {{narrative.name}}
+{% endblock %}
 {% block main %}
-<div class="features">
+    <section class="agenda-detail">
     <h1>{{narrative.name}}</h1>
     <p>{{narrative.full_text}}</p>
-    <p>{{narrative.datentime}}</p>
-    <a href="{% url 'agenda-update' narrative.id %}" class="btn btn-info">Edit</a>
-    <a href="{% url 'agenda-delete' narrative.id %}" class="btn btn-danger">Delete</a>
-
-</div>
+    <time>{{narrative.datentime}}</time>
+    <div class="controls">
+        <a class="secondary-btn" href="{% url 'agenda-update' narrative.id %}">Edit</a>
+        <a class="primary-btn" href="{% url 'agenda-delete' narrative.id %}">Delete</a>
+    </div>
+    </section>
 {% endblock %}

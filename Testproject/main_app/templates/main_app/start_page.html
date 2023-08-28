@@ -1,21 +1,24 @@
 {% extends 'main_app/parent.html' %}
 <title>%</title>
 {% block main %}
-<div class="features">
-    <h1>This is the start page</h1>
-    <p class="hui">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente deleniti neque reprehenderit provident architecto omnis laborum et odit! Deleniti rem aspernatur facilis a natus placeat soluta repudiandae voluptatum sit eum.</p>
-    <a role="button" class="btn btn-danger batton" href="{% url 'menu_page' %}">Menu</a>
-    <p>
+<section class="features">
+  <h1>This is the start page</h1>
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente deleniti
+    neque reprehenderit provident architecto omnis laborum et odit! Deleniti rem
+    aspernatur facilis a natus placeat soluta repudiandae voluptatum sit eum.
+  </p>
+  <a class="primary-btn" role="button" href="{% url 'menu_page' %}">Menu</a>
+  <p>
     {% for i in spisok %}
-    {{i}}
+        {{i}}
+    {% endfor %} 
+    {% for i in car %} 
+        {% if car.manufacture == 'Range Rover' %} 
+            {{i|upper}} 
+        {% endif %} 
     {% endfor %}
-    {% for i in car %}
-        {% if car.manufacture == 'Range Rover' %}
-        {{i|upper}}
-        {% endif %}
-    {% endfor %}
-    </p>
-</div>
-
+  </p>
+</section>
 
 {% endblock %}

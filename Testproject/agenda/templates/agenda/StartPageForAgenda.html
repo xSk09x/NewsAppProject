@@ -10,7 +10,7 @@
         <div class="alert alert-light">
             <h3>{{i.name}}</h3>
             <p>{{i.intro}}</p>
-            <a href="{% url 'agenda-detail' i.id %}" class="btn btn-info">Read more</a>
+            <a href="{% url 'agenda-detail' i.id %}" class="primary-btn">Read more</a>
         </div>
         {% endfor %}
     {% else %}
