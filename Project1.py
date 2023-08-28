@@ -32,3 +32,5 @@ class buterbrod:
             print("Упал салями вниз")
 sandwich = buterbrod(2,1,1,2)
 sandwich.fall()
+
+print(123)
