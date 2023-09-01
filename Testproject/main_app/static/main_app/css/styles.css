@@ -129,6 +129,19 @@ main {
     margin-bottom: 20px;
 }
 
+.aside-list li, .aside-list li a {
+    transition: all .2s ease-in;
+    font-weight: 600;
+}
+
+.aside-list li:not(.create-btn):hover {
+    background-color: #3aaccf;
+}
+
+.aside-list li a:hover {
+    color: #fff;
+}
+
 .title-comma {
     color: #3aaccf;
 }
@@ -137,10 +150,6 @@ main {
     background-color: #3aaccf;
     box-shadow: 0px 8px 0px 0px #2784a0;
     transition: transform .1s ease, box-shadow .1s ease, background-color .1s ease;
-}
-
-.create-btn:hover {
-    background-color: #2784a0;
 }
 
 .create-btn:active {
