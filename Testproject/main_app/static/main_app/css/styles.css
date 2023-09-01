@@ -113,6 +113,8 @@ main {
 }
 
 .container {
+    display: flex;
+    align-items: center;
     height: 100%;
     max-width: 900px;
     margin: 0 auto;
@@ -171,6 +173,7 @@ main {
 }
 
 .agenda-detail {
+    background-color: #fff;
     margin-top: 42px;
     max-width: 100%;
     box-shadow: 0px 4px 42px 4px rgba(34, 34, 34, 0.1);
@@ -183,7 +186,7 @@ main {
     margin-bottom: 20px;
 }
 
-.agenda-detail P {
+.agenda-detail p {
     width: 100%;
     word-wrap: break-word;
 }
@@ -192,6 +195,7 @@ main {
     margin-top: 16px;
     display: flex;
     justify-content: space-between;
+    gap: 8px;
 }
 
 .features {
@@ -223,4 +227,29 @@ main {
     resize: initial;
     width: 900px;
     height: 300px;
+}
+
+.narrative-block {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 4px;
+
+}
+
+.narrative-block:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.narrative-block h2 {
+    margin-bottom: 18px;
+
+}
+
+.narrative-block p {
+    margin-bottom: 64px;
+}
+
+.narrative-block .primary-btn {
+    max-width: 100%;
+    text-align: center;
 }

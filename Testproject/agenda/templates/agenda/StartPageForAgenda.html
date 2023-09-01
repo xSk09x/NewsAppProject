@@ -4,11 +4,10 @@
 
 {% block main %}
 <div class="menu">
-    <h2>Agenda Page</h2>
     {% if narratives %}
         {% for i in narratives %}
-        <div class="alert alert-light">
-            <h3>{{i.name}}</h3>
+        <div class="narrative-block">
+            <h2>{{i.name}}</h2>
             <p>{{i.intro}}</p>
             <a href="{% url 'agenda-detail' i.id %}" class="primary-btn">Read more</a>
         </div>
