@@ -8,5 +8,5 @@ urlpatterns = [
     path('', views.start, name= "StartPage"),
     path('page', views.SecondPage),
     path('menu', views.menu, name="menu_page"),
-    path('design_page', views.design)
+    # path('support', views.SupportPage, name="support_page")
 ] + static(settings.STATIC_URL, document_root= settings.STATIC_ROOT)
