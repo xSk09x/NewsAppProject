@@ -217,3 +217,10 @@ main {
 .support p {
     margin-bottom: 16px;
 }
+
+.input__support{
+    margin-bottom: 16px;
+    resize: initial;
+    width: 900px;
+    height: 300px;
+}
