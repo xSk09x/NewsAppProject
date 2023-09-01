@@ -6,7 +6,5 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.start, name= "StartPage"),
-    path('page', views.SecondPage),
-    path('menu', views.menu, name="menu_page"),
-    # path('support', views.SupportPage, name="support_page")
+    path('support', views.SupportPage, name="SupportPage")
 ] + static(settings.STATIC_URL, document_root= settings.STATIC_ROOT)
